@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>She Can Foundation</title>
+    <!-- Using basic system fonts to keep a simple student-made look -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="header-row">
+            <h1 id="site-title">She Can Foundation</h1>
+            <nav class="top-nav">
+                <a href="resume.pdf" download>Resume</a>
+                <a href="https://github.com/your-username" target="_blank" rel="noopener">GitHub</a>
+            </nav>
+        </div>
+        <p class="tagline">Empowering Women Through Education & Opportunities</p>
+    </header>
+
+    <!-- Main Section -->
+    <section class="main-section">
+
+        <!-- About Section -->
+        <div class="about-box">
+            <h2>About Us</h2>
+
+            <p>
+                She Can Foundation is an NGO that supports women and young girls
+                by encouraging education, confidence, leadership, and skill development.
+                Our mission is to create equal opportunities and inspire positive change.
+            </p>
+
+            <button id="join-btn">Join Our Mission</button>
+        </div>
+
+        <!-- Image Section -->
+        <div class="image-box">
+            <img src="https://images.unsplash.com/photo-1521791136064-7986c2920216?q=80&w=1200&auto=format&fit=crop"
+                alt="Women Empowerment">
+        </div>
+
+    </section>
+
+    <!-- Quick Stats -->
+    <section id="impact" class="stats-section">
+        <div class="stats-grid">
+            <div class="stat card">
+                <div class="num">1,200+</div>
+                <div class="label">Women Trained</div>
+            </div>
+            <div class="stat card">
+                <div class="num">150</div>
+                <div class="label">Workshops</div>
+            </div>
+            <div class="stat card">
+                <div class="num">95%</div>
+                <div class="label">Successful Placements</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Programs -->
+    <section id="programs" class="programs-section">
+        <h2>Our Programs</h2>
+        <div class="programs-grid">
+            <div class="card">
+                <h3>Education & Scholarships</h3>
+                <p>Support for formal schooling and vocational training to help girls complete their education.</p>
+            </div>
+            <div class="card">
+                <h3>Leadership Workshops</h3>
+                <p>Confidence-building and leadership skills for young women to take charge of their futures.</p>
+            </div>
+            <div class="card">
+                <h3>Career Mentoring</h3>
+                <p>Practical career guidance, interview prep, and placement support with partner organizations.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials-section">
+        <h2>What Participants Say</h2>
+        <div class="testimonials">
+            <blockquote class="card">"I gained the confidence to apply for my first job — and I got it!" — Ayesha
+            </blockquote>
+            <blockquote class="card">"The mentoring program changed how I approach challenges. Highly recommended." —
+                Priya</blockquote>
+        </div>
+    </section>
+
+    <!-- Projects / Portfolio -->
+    <section id="projects" class="projects-section">
+        <h2>Selected Projects</h2>
+        <div class="projects-grid">
+            <div class="project card">
+                <h3>Volunteer Portal (React)</h3>
+                <p>A small web app to register volunteers, view upcoming events, and download resources.</p>
+                <div class="links"><a href="#" target="_blank">Live</a> • <a href="#" target="_blank">GitHub</a></div>
+            </div>
+            <div class="project card">
+                <h3>Mentor Dashboard (Vanilla JS)</h3>
+                <p>Interactive dashboard showing mentee progress and simple charts built with Chart.js.</p>
+                <div class="links"><a href="#" target="_blank">Live</a> • <a href="#" target="_blank">GitHub</a></div>
+            </div>
+            <div class="project card">
+                <h3>Scholarship Form (HTML/CSS)</h3>
+                <p>Responsive scholarship application form with client-side validation and file uploads.</p>
+                <div class="links"><a href="#" target="_blank">Live</a> • <a href="#" target="_blank">GitHub</a></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact / Join -->
+    <section id="contact" class="contact-section">
+        <h2>Join or Volunteer</h2>
+        <form id="contact-form" class="contact-form" onsubmit="return contactSubmit(event)">
+            <label>Name<br>
+                <input id="contact-name" name="name" type="text" required>
+            </label>
+            <label>Email<br>
+                <input id="contact-email" name="email" type="email" required>
+            </label>
+            <label>Message<br>
+                <textarea id="contact-message" name="message" rows="4" required></textarea>
+            </label>
+            <div>
+                <button type="submit">Send Message</button>
+            </div>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 She Can Foundation | Designed by Student Applicant</p>
+    </footer>
+
+    <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
